@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+// how should a schema look if I want the user to sign in, 
+
+// then be able to delete, add to cart, 
+// purchase, and finally Their purchased items. 
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+  email    String @unique
+}
+
+model Products {
+  id          Int     @id @default(autoincrement())
+  name        String
+  category    String
+  price       Float
+  inStock     Boolean
+  quantity    Int
+  imageUrl    String
+  rating      Float
+  description String
+}

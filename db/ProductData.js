@@ -5,6 +5,7 @@
       category: "Home Essentials",
       price: 25.99,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/PjReSjG",
       rating: 4.5,
       description:
@@ -15,6 +16,7 @@
       category: "Fitness",
       price: 15.75,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/AwvFAZN",
       rating: 4.8,
       description:
@@ -25,6 +27,7 @@
       category: "Electronics",
       price: 89.99,
       inStock: false,
+      quantity: 10,
       imageUrl: "https://imgur.com/6cFehBe",
       rating: 4.4,
       description:
@@ -35,6 +38,7 @@
       category: "Groceries",
       price: 5.49,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/BR6kkRy",
       rating: 4.6,
       description:
@@ -45,6 +49,7 @@
       category: "Fitness",
       price: 199.99,
       inStock: false,
+      quantity: 10,
       imageUrl: "https://imgur.com/taU1hZP",
       rating: 4.2,
       description:
@@ -55,6 +60,7 @@
       category: "Kitchen Appliances",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/JhaVPxS",
       rating: 4.7,
       description:
@@ -65,6 +71,7 @@
       category: "Electronics",
       price: 59.99,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/slTbgx9",
       rating: 4.3,
       description:
@@ -75,6 +82,7 @@
       category: "Home Decor",
       price: 29.99,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/bSpYFSG",
       rating: 4.9,
       description:
@@ -85,6 +93,7 @@
       category: "Groceries",
       price: 19.99,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/NamLeL9",
       rating: 4.5,
       description:
@@ -95,6 +104,7 @@
       category: "Accessories",
       price: 49.99,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/4aV0fVu",
       rating: 4.0,
       description:
@@ -105,6 +115,7 @@
       category: "Stationery",
       price: 45.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/LAx7S0W",
       rating: 4.7,
       description:
@@ -115,6 +126,7 @@
       category: "Apparel",
       price: 130.5,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/ZNGLCaT",
       rating: 4.9,
       description:
@@ -125,6 +137,7 @@
       category: "Home Decor",
       price: 60.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/mNfA0zh",
       rating: 4.3,
       description:
@@ -135,6 +148,7 @@
       category: "Books",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/hFvFmo1",
       rating: 4.8,
       description:
@@ -145,6 +159,7 @@
       category: "Health",
       price: 35.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/HDnzsRb",
       rating: 4.6,
       description:
@@ -155,6 +170,7 @@
       category: "Occult",
       price: 75.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Sj0oRvh",
       rating: 4.4,
       description:
@@ -165,6 +181,7 @@
       category: "Weapons",
       price: 95.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Zca6slq",
       rating: 4.7,
       description:
@@ -175,6 +192,7 @@
       category: "Beverages",
       price: 40.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/8dviZfi",
       rating: 4.5,
       description:
@@ -185,6 +203,7 @@
       category: "Occult",
       price: 50.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/AQNYwcy",
       rating: 4.2,
       description:
@@ -195,6 +214,7 @@
       category: "Home Decor",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/WX2DurO",
       rating: 4.0,
       description:
@@ -205,6 +225,7 @@
       category: "Accessories",
       price: 85.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/v5N611J",
       rating: 4.8,
       description:
@@ -215,6 +236,7 @@
       category: "Accessories",
       price: 150.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/2nBuOFi",
       rating: 4.9,
       description:
@@ -225,6 +247,7 @@
       category: "Accessories",
       price: 70.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/LR4TPLk",
       rating: 4.5,
       description:
@@ -235,6 +258,7 @@
       category: "Accessories",
       price: 95.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/tNRf5ri",
       rating: 4.7,
       description:
@@ -245,6 +269,7 @@
       category: "Accessories",
       price: 110.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/XvTJMBu",
       rating: 4.6,
       description:
@@ -255,6 +280,7 @@
       category: "Accessories",
       price: 130.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Efb8jWf",
       rating: 4.4,
       description:
@@ -265,6 +291,7 @@
       category: "Accessories",
       price: 140.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/10CuTLC",
       rating: 4.8,
       description:
@@ -275,6 +302,7 @@
       category: "Accessories",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/SZWGUU6",
       rating: 4.9,
       description:
@@ -285,6 +313,7 @@
       category: "Accessories",
       price: 60.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/eHUKk5b",
       rating: 4.3,
       description:
@@ -295,6 +324,7 @@
       category: "Accessories",
       price: 175.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/mLL3xVX",
       rating: 5.0,
       description:
@@ -305,6 +335,7 @@
       category: "Apparel",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/NMtXGbb",
       rating: 4.9,
       description:
@@ -315,6 +346,7 @@
       category: "Apparel",
       price: 220.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/PMPmGsn",
       rating: 4.8,
       description:
@@ -325,6 +357,7 @@
       category: "Apparel",
       price: 180.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/FABUaXW",
       rating: 4.7,
       description:
@@ -335,6 +368,7 @@
       category: "Apparel",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/q7a9oYG",
       rating: 5.0,
       description:
@@ -345,6 +379,7 @@
       category: "Apparel",
       price: 160.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Nx8Pz9z",
       rating: 4.6,
       description:
@@ -355,6 +390,7 @@
       category: "Apparel",
       price: 90.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/TxRkUuc",
       rating: 4.5,
       description:
@@ -365,6 +401,7 @@
       category: "Apparel",
       price: 140.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/IlRAUmp",
       rating: 4.4,
       description:
@@ -375,6 +412,7 @@
       category: "Apparel",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/x9pjXlo",
       rating: 4.7,
       description:
@@ -385,6 +423,8 @@
       category: "Apparel",
       price: 75.0,
       inStock: true,
+      quantity: 10,
+
       imageUrl: "https://imgur.com/Ez9EuIk",
       rating: 4.3,
       description:
@@ -395,6 +435,8 @@
       category: "Apparel",
       price: 210.0,
       inStock: true,
+      quantity: 10,
+
       imageUrl: "https://imgur.com/idFKdUk",
       rating: 4.8,
       description:
@@ -405,6 +447,7 @@
       category: "Stationery",
       price: 45.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/gVzk8l0",
       rating: 4.8,
       description:
@@ -415,6 +458,7 @@
       category: "Stationery",
       price: 70.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/CaDN3zJ",
       rating: 4.9,
       description:
@@ -425,6 +469,7 @@
       category: "Stationery",
       price: 30.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/vGqsmDZ",
       rating: 4.6,
       description:
@@ -435,6 +480,7 @@
       category: "Stationery",
       price: 55.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/8pwDBQu",
       rating: 4.7,
       description:
@@ -445,6 +491,7 @@
       category: "Stationery",
       price: 100.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/fAYb4v7",
       rating: 4.9,
       description:
@@ -455,6 +502,7 @@
       category: "Stationery",
       price: 25.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/rOdFMS0",
       rating: 4.5,
       description:
@@ -465,6 +513,7 @@
       category: "Stationery",
       price: 15.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/dj8V0uc",
       rating: 4.4,
       description:
@@ -475,6 +524,7 @@
       category: "Stationery",
       price: 10.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/hQ8hgw4",
       rating: 4.3,
       description:
@@ -485,6 +535,7 @@
       category: "Stationery",
       price: 35.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/yl2maTg",
       rating: 4.7,
       description:
@@ -495,6 +546,7 @@
       category: "Stationery",
       price: 80.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/x6Qe9Ru",
       rating: 4.8,
       description:
@@ -505,6 +557,7 @@
       category: "Ultra Gear",
       price: 10000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/0WUzKeb",
       rating: 5.0,
       description:
@@ -515,6 +568,7 @@
       category: "Ultra Gear",
       price: 15000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/19OzG1a",
       rating: 5.0,
       description:
@@ -525,6 +579,7 @@
       category: "Ultra Gear",
       price: 12000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Uh8aPhB",
       rating: 5.0,
       description:
@@ -535,6 +590,7 @@
       category: "Ultra Gear",
       price: 8000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/42ih8jd",
       rating: 5.0,
       description:
@@ -545,6 +601,7 @@
       category: "Ultra Gear",
       price: 9000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/iKKyhKO",
       rating: 5.0,
       description:
@@ -555,6 +612,7 @@
       category: "Ultra Gear",
       price: 11000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/0FMzlg1",
       rating: 5.0,
       description:
@@ -565,6 +623,7 @@
       category: "Ultra Gear",
       price: 13000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/q4CveLW",
       rating: 5.0,
       description:
@@ -575,6 +634,7 @@
       category: "Ultra Gear",
       price: 14000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/viAhFd2",
       rating: 5.0,
       description:
@@ -585,6 +645,7 @@
       category: "Ultra Gear",
       price: 7500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/tM8QOOx",
       rating: 5.0,
       description:
@@ -595,6 +656,7 @@
       category: "Ultra Gear",
       price: 8500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/rEC6T7I",
       rating: 5.0,
       description:
@@ -605,6 +667,7 @@
       category: "Home Decor",
       price: 400.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/bxOkhSM",
       rating: 5.0,
       description:
@@ -615,6 +678,7 @@
       category: "Home Decor",
       price: 450.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/8y7JbJ9",
       rating: 5.0,
       description:
@@ -625,6 +689,7 @@
       category: "Home Decor",
       price: 1000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/zFtw68E",
       rating: 5.0,
       description:
@@ -635,6 +700,7 @@
       category: "Home Decor",
       price: 400.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/8yBBQzS",
       rating: 5.0,
       description:
@@ -645,6 +711,7 @@
       category: "Home Decor",
       price: 600.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/VQf5dAM",
       rating: 5.0,
       description:
@@ -655,6 +722,7 @@
       category: "Home Decor",
       price: 500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/uAPwmbt",
       rating: 5.0,
       description:
@@ -665,6 +733,7 @@
       category: "Home Decor",
       price: 700.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/zte7QoJ",
       rating: 5.0,
       description:
@@ -675,6 +744,7 @@
       category: "Home Decor",
       price: 600.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/0KBNYGt",
       rating: 5.0,
       description:
@@ -685,6 +755,7 @@
       category: "Home Decor",
       price: 900.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/LobpLjS",
       rating: 5.0,
       description:
@@ -695,6 +766,7 @@
       category: "Home Decor",
       price: 850.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/JssrkTC",
       rating: 5.0,
       description:
@@ -705,6 +777,7 @@
       category: "Kitchenware",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/2nZPZAs",
       rating: 4.7,
       description:
@@ -715,6 +788,7 @@
       category: "Home Decor",
       price: 85.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Oqmu8lX",
       rating: 4.8,
       description:
@@ -725,6 +799,7 @@
       category: "Accessories",
       price: 150.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/CogTMwW",
       rating: 4.9,
       description:
@@ -735,6 +810,7 @@
       category: "Home Decor",
       price: 60.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/nocXV8x",
       rating: 4.6,
       description:
@@ -745,6 +821,7 @@
       category: "Jewelry",
       price: 130.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/GkS5wmf",
       rating: 4.7,
       description:
@@ -755,6 +832,7 @@
       category: "Outdoor",
       price: 45.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/SUqvuFy",
       rating: 4.8,
       description:
@@ -765,6 +843,7 @@
       category: "Collectibles",
       price: 220.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/XRwdtgT",
       rating: 4.9,
       description:
@@ -775,6 +854,7 @@
       category: "Stationery",
       price: 95.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/RauneF0",
       rating: 4.7,
       description:
@@ -785,6 +865,7 @@
       category: "Home Essentials",
       price: 175.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Fjz7Mdp",
       rating: 4.8,
       description:
@@ -795,6 +876,7 @@
       category: "Lighting",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/ociOAOa",
       rating: 4.6,
       description:
@@ -805,6 +887,7 @@
       category: "Electronics",
       price: 350.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/H0xmIVQ",
       rating: 4.8,
       description:
@@ -815,6 +898,7 @@
       category: "Electronics",
       price: 400.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/YOmXwhq",
       rating: 4.9,
       description:
@@ -825,6 +909,7 @@
       category: "Electronics",
       price: 500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/WbWvkPf",
       rating: 4.7,
       description:
@@ -835,6 +920,7 @@
       category: "Electronics",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/dgncTOJ",
       rating: 4.8,
       description:
@@ -845,6 +931,7 @@
       category: "Electronics",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/NCMeEnv",
       rating: 4.6,
       description:
@@ -855,6 +942,7 @@
       category: "Electronics",
       price: 750.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/MEf0881",
       rating: 4.9,
       description:
@@ -865,6 +953,7 @@
       category: "Electronics",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/fAQ3uFY",
       rating: 4.7,
       description:
@@ -875,6 +964,7 @@
       category: "Electronics",
       price: 180.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Ki13xJL",
       rating: 4.8,
       description:
@@ -885,6 +975,7 @@
       category: "Electronics",
       price: 100.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/kkcYOpq",
       rating: 4.5,
       description:
@@ -895,6 +986,7 @@
       category: "Electronics",
       price: 400.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/IfbUaMI",
       rating: 4.9,
       description:
@@ -905,6 +997,7 @@
       category: "Fitness",
       price: 150.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/1EpVRIx",
       rating: 4.8,
       description:
@@ -915,6 +1008,7 @@
       category: "Fitness",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/qUmkGBf",
       rating: 4.9,
       description:
@@ -925,6 +1019,7 @@
       category: "Fitness",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/vaubJmz",
       rating: 4.7,
       description:
@@ -935,6 +1030,7 @@
       category: "Fitness",
       price: 1000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/XjmQM1e",
       rating: 4.8,
       description:
@@ -945,6 +1041,7 @@
       category: "Fitness",
       price: 800.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/fiiWSgT",
       rating: 4.6,
       description:
@@ -955,6 +1052,7 @@
       category: "Fitness",
       price: 110.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/iEZx9VD",
       rating: 4.9,
       description:
@@ -965,6 +1063,7 @@
       category: "Fitness",
       price: 85.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/UxAZNxj",
       rating: 4.7,
       description:
@@ -975,6 +1074,7 @@
       category: "Fitness",
       price: 130.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/pdjDsRX",
       rating: 4.8,
       description:
@@ -985,6 +1085,7 @@
       category: "Fitness",
       price: 950.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Vwn9JJe",
       rating: 4.9,
       description:
@@ -995,6 +1096,7 @@
       category: "Fitness",
       price: 170.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/WEkuzeY",
       rating: 4.7,
       description:
@@ -1005,6 +1107,7 @@
       category: "Home Essentials",
       price: 95.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/hrYfWeu",
       rating: 4.7,
       description:
@@ -1015,6 +1118,7 @@
       category: "Home Essentials",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/oCa71gG",
       rating: 4.8,
       description:
@@ -1025,6 +1129,7 @@
       category: "Home Essentials",
       price: 150.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/sdD57g0",
       rating: 4.9,
       description:
@@ -1035,6 +1140,7 @@
       category: "Home Essentials",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/WOccPVI",
       rating: 4.6,
       description:
@@ -1045,6 +1151,7 @@
       category: "Home Essentials",
       price: 80.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/EuOhiWy",
       rating: 4.8,
       description:
@@ -1055,6 +1162,7 @@
       category: "Home Essentials",
       price: 110.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/CuDXNv6",
       rating: 4.7,
       description:
@@ -1065,6 +1173,7 @@
       category: "Home Essentials",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/LJwuzDt",
       rating: 4.9,
       description:
@@ -1075,6 +1184,7 @@
       category: "Home Essentials",
       price: 70.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/7mErfRO",
       rating: 4.5,
       description:
@@ -1085,6 +1195,7 @@
       category: "Home Essentials",
       price: 180.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/j3cYx0N",
       rating: 4.7,
       description:
@@ -1095,6 +1206,7 @@
       category: "Home Essentials",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/gJ6KOKc",
       rating: 4.8,
       description:
@@ -1105,6 +1217,7 @@
       category: "Groceries",
       price: 15.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/lc1l8Ig",
       rating: 4.7,
       description:
@@ -1115,6 +1228,7 @@
       category: "Groceries",
       price: 50.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/eQjhN5Q",
       rating: 4.8,
       description:
@@ -1125,6 +1239,7 @@
       category: "Groceries",
       price: 20.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/VZFJVE5",
       rating: 4.9,
       description:
@@ -1135,6 +1250,7 @@
       category: "Groceries",
       price: 25.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/eILjR9w",
       rating: 4.6,
       description:
@@ -1145,6 +1261,7 @@
       category: "Groceries",
       price: 30.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/SVuqGlm",
       rating: 4.7,
       description:
@@ -1155,6 +1272,7 @@
       category: "Groceries",
       price: 45.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/ViSeY8Q",
       rating: 5.0,
       description:
@@ -1165,6 +1283,7 @@
       category: "Groceries",
       price: 10.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/eRPdIzz",
       rating: 4.5,
       description:
@@ -1175,6 +1294,7 @@
       category: "Groceries",
       price: 35.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/XajnfTu",
       rating: 4.8,
       description:
@@ -1185,6 +1305,7 @@
       category: "Groceries",
       price: 60.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/xUlWa86",
       rating: 4.9,
       description:
@@ -1195,6 +1316,7 @@
       category: "Groceries",
       price: 18.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/2Pxzyju",
       rating: 4.7,
       description:
@@ -1205,6 +1327,7 @@
       category: "Kitchen Appliances",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/jUZNdUb",
       rating: 4.8,
       description:
@@ -1215,6 +1338,7 @@
       category: "Kitchen Appliances",
       price: 150.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/MYTCw6R",
       rating: 4.7,
       description:
@@ -1225,6 +1349,7 @@
       category: "Kitchen Appliances",
       price: 1200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/jV4OZKi",
       rating: 4.9,
       description:
@@ -1235,6 +1360,7 @@
       category: "Kitchen Appliances",
       price: 220.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/KZpCNqF",
       rating: 4.8,
       description:
@@ -1245,6 +1371,7 @@
       category: "Kitchen Appliances",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/L7uE9Tb",
       rating: 4.9,
       description:
@@ -1255,6 +1382,7 @@
       category: "Jewelry",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/qxN1e24",
       rating: 4.9,
       description:
@@ -1265,6 +1393,7 @@
       category: "Jewelry",
       price: 180.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/lp7VNWD",
       rating: 4.8,
       description:
@@ -1275,6 +1404,7 @@
       category: "Jewelry",
       price: 220.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/P4Rjk53",
       rating: 4.7,
       description:
@@ -1285,6 +1415,7 @@
       category: "Jewelry",
       price: 160.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/C7zfWX9",
       rating: 4.6,
       description:
@@ -1295,6 +1426,7 @@
       category: "Jewelry",
       price: 140.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/jXqnYyl",
       rating: 4.8,
       description:
@@ -1305,6 +1437,7 @@
       category: "Jewelry",
       price: 500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/oiVTN5U",
       rating: 5.0,
       description:
@@ -1315,6 +1448,7 @@
       category: "Jewelry",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Z8tkMoU",
       rating: 4.9,
       description:
@@ -1325,6 +1459,7 @@
       category: "Jewelry",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/SpqTOoD",
       rating: 4.8,
       description:
@@ -1335,6 +1470,7 @@
       category: "Jewelry",
       price: 170.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/rqARsF5",
       rating: 4.7,
       description:
@@ -1345,6 +1481,7 @@
       category: "Jewelry",
       price: 450.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/2AuNuOY",
       rating: 5.0,
       description:
@@ -1355,6 +1492,7 @@
       category: "Outdoor",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/0siZgXm",
       rating: 4.9,
       description:
@@ -1365,6 +1503,7 @@
       category: "Outdoor",
       price: 200.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/Fw3Wopn",
       rating: 4.8,
       description:
@@ -1375,6 +1514,7 @@
       category: "Outdoor",
       price: 600.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/gTMsCrU",
       rating: 5.0,
       description:
@@ -1385,6 +1525,7 @@
       category: "Outdoor",
       price: 120.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/aJD15Ir",
       rating: 4.7,
       description:
@@ -1395,6 +1536,7 @@
       category: "Outdoor",
       price: 180.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/MfBJHY8",
       rating: 4.9,
       description:
@@ -1405,6 +1547,7 @@
       category: "Outdoor",
       price: 220.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/ifBwGSe",
       rating: 4.8,
       description:
@@ -1415,6 +1558,7 @@
       category: "Outdoor",
       price: 90.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/FT5p3W4",
       rating: 4.6,
       description:
@@ -1425,6 +1569,7 @@
       category: "Outdoor",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/EWXSTb9",
       rating: 5.0,
       description:
@@ -1435,6 +1580,7 @@
       category: "Outdoor",
       price: 350.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/TnoHPDO",
       rating: 5.0,
       description:
@@ -1445,6 +1591,7 @@
       category: "Outdoor",
       price: 130.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/gp6zlOV",
       rating: 4.7,
       description:
@@ -1455,6 +1602,7 @@
       category: "Collectibles",
       price: 500.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/tNuQTW0",
       rating: 4.9,
       description:
@@ -1465,6 +1613,7 @@
       category: "Collectibles",
       price: 450.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/BFKK7va",
       rating: 5.0,
       description:
@@ -1475,6 +1624,7 @@
       category: "Collectibles",
       price: 300.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/oDvHkvX",
       rating: 4.8,
       description:
@@ -1485,6 +1635,7 @@
       category: "Collectibles",
       price: 1000.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/4C8Kt1N",
       rating: 5.0,
       description:
@@ -1495,6 +1646,7 @@
       category: "Collectibles",
       price: 400.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/x0tIZj2",
       rating: 4.7,
       description:
@@ -1505,6 +1657,7 @@
       category: "Collectibles",
       price: 350.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/EOnKzG1",
       rating: 4.9,
       description:
@@ -1515,6 +1668,7 @@
       category: "Collectibles",
       price: 600.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/ial57BX",
       rating: 5.0,
       description:
@@ -1525,6 +1679,7 @@
       category: "Collectibles",
       price: 250.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/LmZ6Cvi",
       rating: 4.8,
       description:
@@ -1535,6 +1690,7 @@
       category: "Collectibles",
       price: 550.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/mDbfHeO",
       rating: 4.9,
       description:
@@ -1545,6 +1701,7 @@
       category: "Collectibles",
       price: 800.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/bShWvom",
       rating: 5.0,
       description:
@@ -1555,6 +1712,7 @@
       category: "Beverages",
       price: 12.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/hWSnE4X",
       rating: 4.8,
       description:
@@ -1565,6 +1723,7 @@
       category: "Beverages",
       price: 15.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/213B58t",
       rating: 4.9,
       description:
@@ -1575,6 +1734,7 @@
       category: "Beverages",
       price: 18.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/uyIq2MJ",
       rating: 5.0,
       description:
@@ -1585,6 +1745,7 @@
       category: "Beverages",
       price: 20.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/DK8wT4V",
       rating: 4.7,
       description:
@@ -1595,6 +1756,7 @@
       category: "Beverages",
       price: 10.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/wnb7eMd",
       rating: 4.5,
       description:
@@ -1605,6 +1767,7 @@
       category: "Beverages",
       price: 14.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/N2v3hV4",
       rating: 4.8,
       description:
@@ -1615,6 +1778,7 @@
       category: "Beverages",
       price: 22.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/OBfBiZu",
       rating: 4.9,
       description:
@@ -1625,6 +1789,7 @@
       category: "Beverages",
       price: 8.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/MMB6o9G",
       rating: 4.6,
       description:
@@ -1635,6 +1800,7 @@
       category: "Beverages",
       price: 25.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/zPMDwIT",
       rating: 5.0,
       description:
@@ -1645,6 +1811,7 @@
       category: "Beverages",
       price: 30.0,
       inStock: true,
+      quantity: 10,
       imageUrl: "https://imgur.com/wRz0tet",
       rating: 4.7,
       description:
