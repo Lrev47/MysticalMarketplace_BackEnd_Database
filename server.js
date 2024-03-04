@@ -3,10 +3,16 @@ require("dotenv").config();
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const server = express();
+const cors = require("cors");
+const morgan = require("morgan");
 const PORT = process.env.PORT || 8080;
 
 const bodyParser = require("body-parser");
 server.use(bodyParser.json());
+
+server.use(cors());
+
+server.use(morgan("dev"));
 
 server.use((req, res, next) => {
   const auth = req.headers.authorization;
