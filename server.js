@@ -29,7 +29,7 @@ server.get("/health", (req, res) => {
   res.send("its working");
 });
 
-server.use("/api", require("./api"));
+server.use("/api", require("./api/index.js"));
 
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
