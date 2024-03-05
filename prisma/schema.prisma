@@ -18,15 +18,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//users
+//products
+//order
+//orderItem
+//Inventory
 model Users {
-  id       Int    @id @default(autoincrement())
-  username String @unique
-  password String
-  email    String @unique
+  id        Int         @id @default(autoincrement())
+  username  String      @unique
+  password  String
+  phone     String
+  email     String      @unique
+  Order     Order[]
+  inventory Inventory[]
 }
 
 model Products {
-  id          Int     @id @default(autoincrement())
+  id          Int         @id @default(autoincrement())
   name        String
   category    String
   price       Float
@@ -35,4 +43,41 @@ model Products {
   imageUrl    String
   rating      Float
   description String
+  Order       Order[]
+  OrderItem   OrderItem[]
+  Inventory   Inventory[]
+}
+
+model Order {
+  id         Int         @id @default(autoincrement())
+  createdAt  DateTime    @default(now())
+  status     String
+  total      Float
+  user       Users       @relation(fields: [userId], references: [id])
+  userId     Int
+  orderItems OrderItem[]
+  Products   Products?   @relation(fields: [productsId], references: [id])
+  productsId Int?
+  Inventory  Inventory[]
+}
+
+model OrderItem {
+  id         Int      @id @default(autoincrement())
+  quantity   Int
+  totalPrice Float
+  product    Products @relation(fields: [productId], references: [id])
+  productId  Int
+  order      Order    @relation(fields: [orderId], references: [id])
+  orderId    Int
+}
+
+model Inventory {
+  id        Int      @id @default(autoincrement())
+  quantity  Int
+  product   Products @relation(fields: [productId], references: [id])
+  productId Int
+  Users     Users?   @relation(fields: [usersId], references: [id])
+  usersId   Int?
+  Order     Order?   @relation(fields: [orderId], references: [id])
+  orderId   Int?
 }
