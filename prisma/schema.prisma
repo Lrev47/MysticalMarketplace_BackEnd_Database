@@ -22,15 +22,15 @@ datasource db {
 //products
 //order
 //orderItem
-//Inventory
 model Users {
-  id        Int         @id @default(autoincrement())
-  username  String      @unique
-  password  String
-  phone     String
-  email     String      @unique
-  Order     Order[]
-  inventory Inventory[]
+  id           Int     @id @default(autoincrement())
+  username     String  @unique
+  password     String
+  phone        String?
+  email        String  @unique
+  moneyNum     Float
+  userImageUrl String
+  Order        Order[]
 }
 
 model Products {
@@ -45,7 +45,6 @@ model Products {
   description String
   Order       Order[]
   OrderItem   OrderItem[]
-  Inventory   Inventory[]
 }
 
 model Order {
@@ -53,31 +52,20 @@ model Order {
   createdAt  DateTime    @default(now())
   status     String
   total      Float
+  quantity   Int
   user       Users       @relation(fields: [userId], references: [id])
   userId     Int
   orderItems OrderItem[]
   Products   Products?   @relation(fields: [productsId], references: [id])
   productsId Int?
-  Inventory  Inventory[]
 }
 
 model OrderItem {
-  id         Int      @id @default(autoincrement())
-  quantity   Int
-  totalPrice Float
-  product    Products @relation(fields: [productId], references: [id])
-  productId  Int
-  order      Order    @relation(fields: [orderId], references: [id])
-  orderId    Int
-}
-
-model Inventory {
   id        Int      @id @default(autoincrement())
   quantity  Int
+  price     Float
   product   Products @relation(fields: [productId], references: [id])
   productId Int
-  Users     Users?   @relation(fields: [usersId], references: [id])
-  usersId   Int?
-  Order     Order?   @relation(fields: [orderId], references: [id])
-  orderId   Int?
+  order     Order    @relation(fields: [orderId], references: [id])
+  orderId   Int
 }

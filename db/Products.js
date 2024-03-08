@@ -9,6 +9,18 @@ const getAllProducts = async () => {
   }
 };
 
+const getProductById = async (productId) => {
+  try {
+    const product = await prisma.products.findUnique({
+      where: {
+        id: parseInt(productId),
+      },
+    });
+    return product;
+  } catch (error) {}
+};
+
 module.exports = {
   getAllProducts,
+  getProductById,
 };
