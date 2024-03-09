@@ -1,5 +1,5 @@
 const express = require("express");
-const productRouter = express.Router();
+const OrderItemRouter = express.Router();
 
 const {
   getAllOrderItems,
@@ -9,14 +9,9 @@ const {
 
 OrderItemRouter.post("/", async (req, res) => {
   try {
-    const { userId, productId, quantity, price } = req.body;
+    const { productId, quantity, price } = req.body;
 
-    const NewOrderItem = await createOrderItem(
-      userId,
-      productId,
-      quantity,
-      price
-    );
+    const NewOrderItem = await createOrderItem(productId, quantity, price);
     res.send(NewOrderItem);
   } catch (error) {
     console.log(error);
@@ -41,4 +36,4 @@ OrderItemRouter.get("/:id", async (req, res) => {
   }
 });
 
-module.exports = productRouter;
+module.exports = OrderItemRouter;

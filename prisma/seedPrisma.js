@@ -7,12 +7,14 @@ const prisma = new PrismaClient();
 async function makeInitialData() {
   console.log("Creating Initial User Data...");
   for (let i = 0; i < users.length; i++) {
-    const { username, password, email } = users[i];
+    const { username, password, email, moneyNum, userImageUrl } = users[i];
     await prisma.users.create({
       data: {
         username,
         password,
         email,
+        moneyNum,
+        userImageUrl,
       },
     });
   }
