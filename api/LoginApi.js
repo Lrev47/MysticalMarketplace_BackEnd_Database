@@ -10,7 +10,7 @@ LogInRouter.post("/", async (req, res, next) => {
     const user = await LogInUser(username, password);
 
     if (user) {
-      const token = "THE MOST SECURE TOKEN EVER";
+      const token = "THE_MOST_SECURE_TOKEN_EVER";
       return res.send({ token, userId: user.id });
     }
     res.send({});
