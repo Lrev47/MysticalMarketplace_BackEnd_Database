@@ -5,8 +5,8 @@ const createOrderItem = async () => {
     const NewOrderItem = await prisma.orderitem.create({
       data: {
         quantity: quantity,
-        price: price,
         productId: productId,
+        orderId: orderId,
       },
     });
     return NewOrderItem;

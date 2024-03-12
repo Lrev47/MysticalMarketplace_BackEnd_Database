@@ -1,7 +1,7 @@
 const express = require("express");
 const userRouter = express.Router();
-
 const { getAllUsers, getUserById } = require("../db/user");
+const { verifyToken } = require("./Authenticate");
 
 userRouter.get("/", async (req, res) => {
   try {
@@ -12,7 +12,7 @@ userRouter.get("/", async (req, res) => {
   }
 });
 
-userRouter.get("/:id", async (req, res) => {
+userRouter.get("/:id", verifyToken, async (req, res) => {
   try {
     const user = await getUserById(req.params.id);
     res.send(user);

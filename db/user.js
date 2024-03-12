@@ -13,14 +13,34 @@ const getUserById = async (userId) => {
   try {
     const user = await prisma.users.findUnique({
       where: {
-        id: parseInt(userId),
+        id: parseInt(userId, 10),
       },
     });
     return user;
-  } catch (error) {}
+  } catch (error) {
+    throw error;
+  }
+};
+const LogInUser = async (username, password) => {
+  try {
+    console.log(username, password);
+    const loggedInUser = await prisma.users.findUnique({
+      where: {
+        username: username,
+        password: password,
+      },
+    });
+
+    if (loggedInUser) {
+      return loggedInUser;
+    }
+  } catch (error) {
+    throw error;
+  }
 };
 
 module.exports = {
   getAllUsers,
   getUserById,
+  LogInUser,
 };
