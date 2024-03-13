@@ -23,18 +23,25 @@ datasource db {
 //order
 //orderItem
 model Users {
-  id           Int     @id @default(autoincrement())
-  username     String  @unique
-  password     String
-  phone        String?
-  email        String  @unique
-  moneyNum     Float
-  userImageUrl String
-  Order        Order[]
+  id              Int     @id @default(autoincrement())
+  firstName       String
+  lastName        String
+  address         String
+  city            String
+  state           String
+  zipcode         String
+  username        String  @unique
+  password        String
+  phone           String?
+  email           String  @unique
+  moneyNum        Float
+  userImageUrl    String
+  favoriteProduct String
+  Order           Order[]
 }
 
 model Products {
-  id          Int         @id @default(autoincrement())
+  id          Int     @id @default(autoincrement())
   name        String
   category    String
   price       Float
@@ -43,8 +50,8 @@ model Products {
   imageUrl    String
   rating      Float
   description String
-  Order       Order[]
-  OrderItem   OrderItem[]
+
+  OrderItem OrderItem[]
 }
 
 model Order {
@@ -56,8 +63,6 @@ model Order {
   user       Users       @relation(fields: [userId], references: [id])
   userId     Int
   orderItems OrderItem[]
-  Products   Products?   @relation(fields: [productsId], references: [id])
-  productsId Int?
 }
 
 model OrderItem {

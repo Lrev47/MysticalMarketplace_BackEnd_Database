@@ -1,17 +1,19 @@
 const prisma = require("../db/client");
 
-const createOrderItem = async () => {
+const createOrderItem = async (orderId, productId, quantity, price) => {
   try {
-    const NewOrderItem = await prisma.orderitem.create({
+    const newOrderItem = await prisma.orderItem.create({
       data: {
         quantity: quantity,
+        price: price,
         productId: productId,
         orderId: orderId,
       },
     });
-    return NewOrderItem;
+    return newOrderItem;
   } catch (error) {
-    console.log(error);
+    console.error(error);
+    throw error;
   }
 };
 
