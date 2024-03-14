@@ -1,5 +1,6 @@
 const express = require("express");
 const OrderRouter = express.Router();
+const { verifyToken } = require("./Authenticate");
 
 const {
   getAllOrders,
@@ -19,7 +20,7 @@ OrderRouter.post("/", async (req, res) => {
   }
 });
 
-OrderRouter.get("/", async (req, res) => {
+OrderRouter.get("/", verifyToken, async (req, res) => {
   try {
     const orders = await getAllOrders();
     res.send(orders);
@@ -28,7 +29,7 @@ OrderRouter.get("/", async (req, res) => {
   }
 });
 
-OrderRouter.get("/:orderId", async (req, res) => {
+OrderRouter.get("/:orderId", verifyToken, async (req, res) => {
   try {
     const { orderId } = req.params;
     const order = await getOrderById(orderId);
@@ -38,7 +39,7 @@ OrderRouter.get("/:orderId", async (req, res) => {
   }
 });
 
-OrderRouter.delete("/:orderId", async (req, res) => {
+OrderRouter.delete("/:orderId", verifyToken, async (req, res) => {
   try {
     const { orderId } = req.params;
     const Order = await deleteOrder(orderId);
