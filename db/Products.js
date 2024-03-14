@@ -20,7 +20,22 @@ const getProductById = async (productId) => {
   } catch (error) {}
 };
 
+const updateProductQuantity = async (productId, newQuantity) => {
+  try {
+    const updatedProduct = await prisma.products.update({
+      where: {
+        id: parseInt(productId),
+      },
+      data: {
+        quantity: newQuantity,
+      },
+    });
+    console.log("Product Updated");
+  } catch (error) {}
+};
+
 module.exports = {
   getAllProducts,
   getProductById,
+  updateProductQuantity,
 };

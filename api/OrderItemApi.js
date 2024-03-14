@@ -5,13 +5,20 @@ const {
   getAllOrderItems,
   getOrderItemById,
   createOrderItem,
-} = require("../db/Products");
+  deleteOrderItem,
+  updateOrderItemQuantity,
+} = require("../db/OrderItem");
 
 OrderItemRouter.post("/", async (req, res) => {
   try {
-    const { productId, quantity, price } = req.body;
+    const { quantity, price, productId, orderId } = req.body;
 
-    const NewOrderItem = await createOrderItem(productId, quantity, price);
+    const NewOrderItem = await createOrderItem(
+      quantity,
+      price,
+      productId,
+      orderId
+    );
     res.send(NewOrderItem);
   } catch (error) {
     console.log(error);
@@ -23,7 +30,7 @@ OrderItemRouter.get("/", async (req, res) => {
     const orderItems = await getAllOrderItems();
     res.send(orderItems);
   } catch (error) {
-    res.status(500).send({ error });
+    console.log(error);
   }
 });
 
@@ -32,8 +39,24 @@ OrderItemRouter.get("/:id", async (req, res) => {
     const orderItem = await getOrderItemById(req.params.id);
     res.send(orderItem);
   } catch (error) {
-    res.error;
+    console.log(error);
   }
+});
+
+OrderItemRouter.patch("/", async (req, res) => {
+  try {
+    const updatedOrderItem = await updateOrderItemQuantity(orderitemId);
+    res.send(updatedOrderItem);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+OrderItemRouter.delete("/", async (req, res) => {
+  try {
+    const OrderItem = await deleteOrderItem(orderitemId);
+    res.send(OrderItem);
+  } catch (error) {}
 });
 
 module.exports = OrderItemRouter;

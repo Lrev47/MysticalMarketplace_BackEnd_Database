@@ -56,7 +56,7 @@ module.exports = [
   },
   {
     name: "Professional Blender",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 120.0,
     inStock: true,
     quantity: 10,
@@ -1323,7 +1323,7 @@ module.exports = [
   },
   {
     name: "Cauldron of Endless Stews",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 300.0,
     inStock: true,
     quantity: 10,
@@ -1334,7 +1334,7 @@ module.exports = [
   },
   {
     name: "Inferno Toaster",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 150.0,
     inStock: true,
     quantity: 10,
@@ -1345,7 +1345,7 @@ module.exports = [
   },
   {
     name: "Frostbinder Refrigerator",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 1200.0,
     inStock: true,
     quantity: 10,
@@ -1356,7 +1356,7 @@ module.exports = [
   },
   {
     name: "Spectral Blender",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 220.0,
     inStock: true,
     quantity: 10,
@@ -1367,7 +1367,7 @@ module.exports = [
   },
   {
     name: "Alchemy Coffee Maker",
-    category: "Kitchen Appliances",
+    category: "Kitchenware",
     price: 250.0,
     inStock: true,
     quantity: 10,
