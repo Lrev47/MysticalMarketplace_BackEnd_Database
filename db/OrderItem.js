@@ -41,14 +41,17 @@ const updateOrderItemQuantity = async (orderitemId, newQuantity) => {
   try {
     const updatedOrderItem = await prisma.orderItem.update({
       where: {
-        id: parseInt(orderitemId),
+        id: parseInt(orderitemId, 10),
       },
       data: {
         quantity: newQuantity,
       },
     });
-    console.log("ItemUpdated");
-  } catch (error) {}
+    console.log("Item Updated", updatedOrderItem);
+    return updatedOrderItem;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const deleteOrderItem = async (orderitemId) => {

@@ -43,18 +43,22 @@ OrderItemRouter.get("/:id", async (req, res) => {
   }
 });
 
-OrderItemRouter.patch("/", async (req, res) => {
+OrderItemRouter.patch("/:id", async (req, res) => {
   try {
-    const updatedOrderItem = await updateOrderItemQuantity(orderitemId);
+    const { quantity } = req.body;
+    const updatedOrderItem = await updateOrderItemQuantity(
+      req.params.id,
+      quantity
+    );
     res.send(updatedOrderItem);
   } catch (error) {
     console.log(error);
   }
 });
 
-OrderItemRouter.delete("/", async (req, res) => {
+OrderItemRouter.delete("/:id", async (req, res) => {
   try {
-    const OrderItem = await deleteOrderItem(orderitemId);
+    const OrderItem = await deleteOrderItem(req.params.id);
     res.send(OrderItem);
   } catch (error) {}
 });

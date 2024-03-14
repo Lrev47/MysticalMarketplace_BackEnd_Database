@@ -28,17 +28,19 @@ OrderRouter.get("/", async (req, res) => {
   }
 });
 
-OrderRouter.get("/", async (req, res) => {
+OrderRouter.get("/:orderId", async (req, res) => {
   try {
+    const { orderId } = req.params;
     const order = await getOrderById(orderId);
-    res.send(order);
+    res.send("order Deleted");
   } catch (error) {
     console.log(error);
   }
 });
 
-OrderRouter.delete("/", async (req, res) => {
+OrderRouter.delete("/:orderId", async (req, res) => {
   try {
+    const { orderId } = req.params;
     const Order = await deleteOrder(orderId);
     res.send(Order);
   } catch (error) {
