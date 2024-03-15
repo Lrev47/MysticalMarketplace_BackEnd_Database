@@ -31,6 +31,7 @@ const updateProductQuantity = async (productId, newQuantity) => {
       },
     });
     console.log("Product Updated");
+    return updatedProduct;
   } catch (error) {}
 };
 

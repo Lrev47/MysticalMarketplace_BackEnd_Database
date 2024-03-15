@@ -1,7 +1,11 @@
 const express = require("express");
 const productRouter = express.Router();
 
-const { getAllProducts, getProductById } = require("../db/Products");
+const {
+  getAllProducts,
+  getProductById,
+  updateProductQuantity,
+} = require("../db/Products");
 
 productRouter.get("/", async (req, res) => {
   try {
@@ -18,6 +22,16 @@ productRouter.get("/:id", async (req, res) => {
     res.send(product);
   } catch (error) {
     res.error;
+  }
+});
+
+productRouter.patch("/:id", async (req, res) => {
+  try {
+    const { quantity } = req.body;
+    const updatedproduct = await updateProductQuantity(req.params.id, quantity);
+    res.send(updatedproduct);
+  } catch (error) {
+    console.log(error);
   }
 });
 

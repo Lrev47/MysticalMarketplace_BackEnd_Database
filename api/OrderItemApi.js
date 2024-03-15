@@ -1,6 +1,5 @@
 const express = require("express");
 const OrderItemRouter = express.Router();
-const { verifyToken } = require("./Authenticate");
 
 const {
   getAllOrderItems,
