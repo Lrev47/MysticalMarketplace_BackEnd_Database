@@ -1,4 +1,0 @@
--- AlterTable
-ALTER TABLE "Order" ALTER COLUMN "status" SET DEFAULT 'pending',
-ALTER COLUMN "total" SET DEFAULT 0,
-ALTER COLUMN "quantity" SET DEFAULT 0;

@@ -1,11 +1,8 @@
 const prisma = require("../db/client");
 
-const createOrder = async (status, price, quantity, userId) => {
+const createOrder = async (userId) => {
   const newOrder = await prisma.order.create({
     data: {
-      status: status,
-      total: price * quantity,
-      quantity: quantity,
       userId: userId,
     },
   });

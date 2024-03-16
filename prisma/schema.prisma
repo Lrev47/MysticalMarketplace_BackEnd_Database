@@ -32,7 +32,6 @@ model Users {
   zipcode         String
   username        String  @unique
   password        String
-  phone           String?
   email           String  @unique
   moneyNum        Float
   userImageUrl    String
@@ -59,7 +58,6 @@ model Order {
   createdAt  DateTime    @default(now())
   status     String      @default("pending")
   total      Float       @default(0)
-  quantity   Int         @default(0) //this needs to be deleted
   user       Users       @relation(fields: [userId], references: [id])
   userId     Int
   orderItems OrderItem[]

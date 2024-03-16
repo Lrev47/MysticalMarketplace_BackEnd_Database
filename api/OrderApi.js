@@ -11,9 +11,9 @@ const {
 
 OrderRouter.post("/", async (req, res) => {
   try {
-    const { status, price, quantity, userId } = req.body;
+    const { userId } = req.body;
 
-    const NewOrder = await createOrder(status, price, quantity, userId);
+    const NewOrder = await createOrder(userId);
     res.send(NewOrder);
   } catch (error) {
     console.log(error);

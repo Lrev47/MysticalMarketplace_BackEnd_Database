@@ -1,4 +1,7 @@
 const prisma = require("../db/client");
+const jwt = require("jsonwebtoken");
+
+const SECRET_KEY = process.env.SECRET_KEY;
 
 const getAllUsers = async () => {
   try {
@@ -30,9 +33,12 @@ const LogInUser = async (username, password) => {
         password: password,
       },
     });
-
+    console.log(loggedInUser);
     if (loggedInUser) {
-      return loggedInUser;
+      const token = jwt.sign({ userId: loggedInUser.id }, SECRET_KEY, {
+        expiresIn: "1h",
+      });
+      return { token, userId: loggedInUser.id };
     }
   } catch (error) {
     throw error;
