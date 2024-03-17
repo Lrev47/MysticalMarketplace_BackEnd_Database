@@ -7,6 +7,7 @@ const {
   getOrderById,
   createOrder,
   deleteOrder,
+  findOrCreatePendingOrder,
 } = require("../db/order");
 
 OrderRouter.post("/", async (req, res) => {
@@ -26,6 +27,21 @@ OrderRouter.get("/", verifyToken, async (req, res) => {
     res.send(orders);
   } catch (error) {
     console.log(error);
+  }
+});
+
+OrderRouter.get("/current", verifyToken, async (req, res) => {
+  try {
+    const userId = Number(req.query.userId);
+    if (isNaN(userId)) {
+      return res.status(403).send("User id Not valid");
+    }
+
+    const order = await findOrCreatePendingOrder(userId);
+    res.json(order);
+  } catch (error) {
+    console.error("Error finding or creating  order:", error);
+    res.send("error");
   }
 });
 
