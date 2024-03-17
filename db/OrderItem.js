@@ -37,6 +37,19 @@ const getOrderItemById = async (orderitemId) => {
   } catch (error) {}
 };
 
+const getOrderItemsByOrderId = async (orderId) => {
+  try {
+    const orderitems = await prisma.orderItem.findMany({
+      where: {
+        orderId: parseInt(orderId),
+      },
+    });
+    return orderitems;
+  } catch (error) {
+    console.error("error", error);
+  }
+};
+
 const updateOrderItemQuantity = async (orderitemId, newQuantity) => {
   try {
     const updatedOrderItem = await prisma.orderItem.update({
@@ -73,4 +86,5 @@ module.exports = {
   createOrderItem,
   deleteOrderItem,
   updateOrderItemQuantity,
+  getOrderItemsByOrderId,
 };

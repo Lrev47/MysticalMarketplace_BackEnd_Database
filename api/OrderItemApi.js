@@ -7,6 +7,7 @@ const {
   createOrderItem,
   deleteOrderItem,
   updateOrderItemQuantity,
+  getOrderItemsByOrderId,
 } = require("../db/OrderItem");
 
 OrderItemRouter.post("/", async (req, res) => {
@@ -29,6 +30,20 @@ OrderItemRouter.get("/", async (req, res) => {
   try {
     const orderItems = await getAllOrderItems();
     res.send(orderItems);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+OrderItemRouter.get("/", async (req, res) => {
+  try {
+    const { orderId } = req.query;
+    if (!orderId) {
+      return res.send("orderID is needed");
+    }
+
+    const orderItems = await getOrderItemsByOrderId(orderId);
+    res.json(orderItems);
   } catch (error) {
     console.log(error);
   }
