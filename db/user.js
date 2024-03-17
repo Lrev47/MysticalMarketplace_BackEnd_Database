@@ -24,6 +24,24 @@ const getUserById = async (userId) => {
     throw error;
   }
 };
+
+const updateUserMoney = async (userId, newAmount) => {
+  try {
+    const updatedMoney = await prisma.users.update({
+      where: {
+        id: parseInt(userId),
+      },
+      data: {
+        moneyNum: {
+          increment: newAmount,
+        },
+      },
+    });
+    console.log("User Money Updated");
+    return updatedMoney;
+  } catch (error) {}
+};
+
 const LogInUser = async (username, password) => {
   try {
     console.log(username, password);
@@ -49,4 +67,5 @@ module.exports = {
   getAllUsers,
   getUserById,
   LogInUser,
+  updateUserMoney,
 };
