@@ -38,11 +38,13 @@ OrderItemRouter.get("/", async (req, res) => {
 OrderItemRouter.get("/", async (req, res) => {
   try {
     const { orderId } = req.query;
+    console.log(`Received request for orderId: ${orderId}`);
     if (!orderId) {
       return res.send("orderID is needed");
     }
 
     const orderItems = await getOrderItemsByOrderId(orderId);
+    console.log(`Returning order items to the client`, orderItems);
     res.json(orderItems);
   } catch (error) {
     console.log(error);

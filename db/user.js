@@ -32,13 +32,16 @@ const LogInUser = async (username, password) => {
         username: username,
         password: password,
       },
+      include: {
+        Order: true,
+      },
     });
     console.log(loggedInUser);
     if (loggedInUser) {
       const token = jwt.sign({ userId: loggedInUser.id }, SECRET_KEY, {
         expiresIn: "1h",
       });
-      return { token, userId: loggedInUser.id };
+      return { token, userId: loggedInUser.id, Order: loggedInUser.Order };
     }
   } catch (error) {
     throw error;

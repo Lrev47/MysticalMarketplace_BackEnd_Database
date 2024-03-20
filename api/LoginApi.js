@@ -13,7 +13,11 @@ LogInRouter.post("/", async (req, res) => {
     const user = await LogInUser(username, password);
 
     if (user && user.token) {
-      return res.send({ token: user.token, userId: user.userId });
+      return res.send({
+        token: user.token,
+        userId: user.userId,
+        orders: user.Order,
+      });
     }
   } catch (error) {
     console.error(error);

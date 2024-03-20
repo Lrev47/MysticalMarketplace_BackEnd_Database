@@ -38,13 +38,15 @@ const getOrderItemById = async (orderitemId) => {
 };
 
 const getOrderItemsByOrderId = async (orderId) => {
+  console.log(`Fetching order items for orderId: ${orderId}`);
   try {
-    const orderitems = await prisma.orderItem.findMany({
+    const orderItems = await prisma.orderItem.findMany({
       where: {
         orderId: parseInt(orderId),
       },
     });
-    return orderitems;
+    console.log(`Found order items:`, orderItems);
+    return orderItems;
   } catch (error) {
     console.error("error", error);
   }
