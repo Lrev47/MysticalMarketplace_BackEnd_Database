@@ -3,7 +3,7 @@ const prisma = require("../db/client");
 const createOrder = async (userId) => {
   const newOrder = await prisma.order.create({
     data: {
-      userId: userId,
+      userId: parseInt(userId),
     },
   });
   return newOrder;
@@ -14,6 +14,19 @@ const getAllOrders = async () => {
     const orders = await prisma.order.findMany();
     return orders;
   } catch (error) {
+    throw error;
+  }
+};
+
+const updateOrderStatusById = async (orderId, newStatus) => {
+  try {
+    const updatedOrder = await prisma.order.update({
+      where: { id: parseInt(orderId, 10) },
+      data: { status: newStatus },
+    });
+    return updatedOrder;
+  } catch (error) {
+    console.error("Error updating order status:", error);
     throw error;
   }
 };
@@ -75,4 +88,5 @@ module.exports = {
   createOrder,
   deleteOrder,
   findOrCreatePendingOrder,
+  updateOrderStatusById,
 };

@@ -20,6 +20,28 @@ const getProductById = async (productId) => {
   } catch (error) {}
 };
 
+const updateMultipleProductQuantities = async (productsToUpdate) => {
+  try {
+    const productUpdate = productsToUpdate.map((product) => {
+      return prisma.products.update({
+        where: {
+          id: parseInt(product.productId),
+        },
+        data: {
+          quantity: {
+            decrement: parseInt(product.quantityToSubtract),
+          },
+        },
+      });
+    });
+    const updatedProduct = await prisma.$productUpdate(productUpdate);
+    console.log("updated producsw");
+    return updatedProduct;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 const updateProductQuantity = async (productId, newQuantity) => {
   try {
     const updatedProduct = await prisma.products.update({
@@ -39,4 +61,5 @@ module.exports = {
   getAllProducts,
   getProductById,
   updateProductQuantity,
+  updateMultipleProductQuantities,
 };

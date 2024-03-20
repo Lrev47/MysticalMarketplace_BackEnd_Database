@@ -5,6 +5,7 @@ const {
   getAllProducts,
   getProductById,
   updateProductQuantity,
+  updateMultipleProductQuantities,
 } = require("../db/Products");
 
 productRouter.get("/", async (req, res) => {
@@ -22,6 +23,18 @@ productRouter.get("/:id", async (req, res) => {
     res.send(product);
   } catch (error) {
     res.error;
+  }
+});
+
+productRouter.patch("/updateQuantities", async (req, res) => {
+  try {
+    const productsToUpdate = req.body;
+    const updatedProducts = await updateMultipleProductQuantities(
+      productsToUpdate
+    );
+    res.send(updatedProducts);
+  } catch (error) {
+    console.error(error);
   }
 });
 

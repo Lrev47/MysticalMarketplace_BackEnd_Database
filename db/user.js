@@ -12,6 +12,24 @@ const getAllUsers = async () => {
   }
 };
 
+const updateMoneyByUserId = async (userId, totalBalance) => {
+  try {
+    const updatedUser = await prisma.users.update({
+      where: {
+        id: [parseInt(userId)],
+      },
+      data: {
+        moneyNum: {
+          decrement: parseInt(totalBalance),
+        },
+      },
+    });
+    return updatedUser;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 const getUserById = async (userId) => {
   try {
     const user = await prisma.users.findUnique({
@@ -52,4 +70,5 @@ module.exports = {
   getAllUsers,
   getUserById,
   LogInUser,
+  updateMoneyByUserId,
 };
