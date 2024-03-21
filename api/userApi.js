@@ -12,7 +12,7 @@ userRouter.get("/", async (req, res) => {
   }
 });
 
-userRouter.patch("/", async (req, res) => {
+userRouter.patch("/:id", async (req, res) => {
   try {
     const { userId, totalBalance } = req.body;
     const updateUser = await updateMoneyByUserId(userId, totalBalance);

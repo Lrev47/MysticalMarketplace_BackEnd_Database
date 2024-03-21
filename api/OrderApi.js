@@ -9,6 +9,7 @@ const {
   deleteOrder,
   findOrCreatePendingOrder,
   updateOrderStatusById,
+  updateOrderTotalById,
 } = require("../db/order");
 
 OrderRouter.post("/createOrder", async (req, res) => {
@@ -36,6 +37,17 @@ OrderRouter.patch("/updateStatus", async (req, res) => {
 
   try {
     const updatedOrder = await updateOrderStatusById(orderId, status);
+    res.json(updatedOrder);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+OrderRouter.patch("/updateTotal", async (req, res) => {
+  const { orderId, newTotal } = req.body;
+
+  try {
+    const updatedOrder = await updateOrderTotalById(orderId, newTotal);
     res.json(updatedOrder);
   } catch (error) {
     console.error(error);
