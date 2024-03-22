@@ -22,6 +22,17 @@ userRouter.patch("/:id", async (req, res) => {
   }
 });
 
+userRouter.patch("/:id", verifyToken, async (req, res) => {
+  try {
+    const userId = req.params.id;
+    const { moneyNum } = req.body;
+    const updatedMoneyNum = await updateUserMoney(userId, moneyNum);
+    res.json(updatedMoneyNum);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 userRouter.get("/:id", verifyToken, async (req, res) => {
   try {
     const user = await getUserById(req.params.id);

@@ -30,6 +30,23 @@ const updateMoneyByUserId = async (userId, totalBalance) => {
   }
 };
 
+const updateUserMoney = async (userId, newAmount) => {
+  try {
+    const updatedMoney = await prisma.users.update({
+      where: {
+        id: parseInt(userId),
+      },
+      data: {
+        moneyNum: {
+          increment: newAmount,
+        },
+      },
+    });
+    console.log("User Money Updated");
+    return updatedMoney;
+  } catch (error) {}
+};
+
 const getUserById = async (userId) => {
   try {
     const user = await prisma.users.findUnique({
