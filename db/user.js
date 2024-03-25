@@ -16,11 +16,11 @@ const updateMoneyByUserId = async (userId, totalBalance) => {
   try {
     const updatedUser = await prisma.users.update({
       where: {
-        id: [parseInt(userId)],
+        id: parseInt(userId),
       },
       data: {
         moneyNum: {
-          decrement: parseInt(totalBalance),
+          increment: parseInt(totalBalance),
         },
       },
     });
@@ -88,4 +88,5 @@ module.exports = {
   getUserById,
   LogInUser,
   updateMoneyByUserId,
+  updateUserMoney,
 };

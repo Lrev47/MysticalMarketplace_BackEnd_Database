@@ -1,6 +1,11 @@
 const express = require("express");
 const userRouter = express.Router();
-const { getAllUsers, getUserById, updateMoneyByUserId } = require("../db/user");
+const {
+  getAllUsers,
+  getUserById,
+  updateMoneyByUserId,
+  updateUserMoney,
+} = require("../db/user");
 const { verifyToken } = require("./Authenticate");
 
 userRouter.get("/", async (req, res) => {
