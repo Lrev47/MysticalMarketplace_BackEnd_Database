@@ -19,9 +19,7 @@ const updateMoneyByUserId = async (userId, totalBalance) => {
         id: parseInt(userId),
       },
       data: {
-        moneyNum: {
-          increment: parseInt(totalBalance),
-        },
+        moneyNum: parseInt(totalBalance),
       },
     });
     return updatedUser;

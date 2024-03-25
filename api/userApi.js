@@ -19,8 +19,8 @@ userRouter.get("/", async (req, res) => {
 
 userRouter.patch("/:id", async (req, res) => {
   try {
-    const { userId, totalBalance } = req.body;
-    const updateUser = await updateMoneyByUserId(userId, totalBalance);
+    const { userId, moneyNum } = req.body;
+    const updateUser = await updateMoneyByUserId(userId, moneyNum);
     res.json(updateUser);
   } catch (error) {
     console.error(error);
