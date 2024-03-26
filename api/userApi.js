@@ -19,8 +19,13 @@ userRouter.get("/", async (req, res) => {
 
 userRouter.patch("/:id", async (req, res) => {
   try {
-    const { userId, moneyNum } = req.body;
-    const updateUser = await updateMoneyByUserId(userId, moneyNum);
+    const { userId, moneyNum, currentBalance } = req.body;
+    console.log(userId);
+    const updateUser = await updateMoneyByUserId(
+      userId,
+      moneyNum,
+      currentBalance
+    );
     res.json(updateUser);
   } catch (error) {
     console.error(error);

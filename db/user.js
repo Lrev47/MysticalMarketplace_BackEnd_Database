@@ -12,14 +12,15 @@ const getAllUsers = async () => {
   }
 };
 
-const updateMoneyByUserId = async (userId, totalBalance) => {
+const updateMoneyByUserId = async (userId, moneyNum, currentBalance) => {
   try {
+    console.log("USER ID BEFORE MONEY FUNCTION", userId);
     const updatedUser = await prisma.users.update({
       where: {
         id: parseInt(userId),
       },
       data: {
-        moneyNum: parseInt(totalBalance),
+        moneyNum: parseInt(moneyNum + currentBalance),
       },
     });
     return updatedUser;
