@@ -44,15 +44,27 @@ const updateOrderTotalById = async (orderId, newTotal) => {
   }
 };
 
-const getOrderById = async (orderId) => {
+const getPendingOrderByUserId = async (userId) => {
   try {
-    const order = await prisma.order.findUnique({
+    console.log({ userId });
+    const userIdNum = parseInt(userId, 10);
+    const pendingOrder = await prisma.order.findFirst({
       where: {
-        id: parseInt(orderId),
+        userId: userIdNum,
+        status: "pending",
+      },
+      include: {
+        orderItems: {
+          include: {
+            product: true,
+          },
+        },
       },
     });
-    return order;
-  } catch (error) {}
+    return pendingOrder;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const findOrCreatePendingOrder = async (userId) => {
@@ -97,10 +109,10 @@ const deleteOrder = async (orderId) => {
 
 module.exports = {
   getAllOrders,
-  getOrderById,
   createOrder,
   deleteOrder,
   findOrCreatePendingOrder,
   updateOrderTotalById,
   updateOrderStatusById,
+  getPendingOrderByUserId,
 };

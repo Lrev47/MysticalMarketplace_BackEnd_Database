@@ -4,7 +4,7 @@ const { verifyToken } = require("./Authenticate");
 
 const {
   getAllOrders,
-  getOrderById,
+  getPendingOrderByUserId,
   createOrder,
   deleteOrder,
   findOrCreatePendingOrder,
@@ -18,6 +18,16 @@ OrderRouter.post("/createOrder", async (req, res) => {
 
     const NewOrder = await createOrder(userId);
     res.send(NewOrder);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+OrderRouter.get("/", async (req, res) => {
+  try {
+    const { userId } = req.query;
+    const pendingOrder = await getPendingOrderByUserId(userId);
+    res.send(pendingOrder);
   } catch (error) {
     console.log(error);
   }
