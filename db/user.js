@@ -20,12 +20,25 @@ const updateMoneyByUserId = async (userId, moneyNum, currentBalance) => {
         id: parseInt(userId),
       },
       data: {
-        moneyNum: parseInt(moneyNum + currentBalance),
+        moneyNum: parseFloat(moneyNum + currentBalance),
       },
     });
     return updatedUser;
   } catch (error) {
     console.error(error);
+  }
+};
+const deductFromUserBalance = async (userId, totalCost) => {
+  try {
+    const updatedUser = await prisma.users.update({
+      where: { id: parseInt(userId) },
+      data: { balance: { decrement: parseFloat(totalCost) } },
+    });
+    console.log("User Balance is updaed", updatedUser);
+    return updatedUser;
+  } catch (error) {
+    console.error(error);
+    throw error;
   }
 };
 
@@ -87,5 +100,6 @@ module.exports = {
   getUserById,
   LogInUser,
   updateMoneyByUserId,
+  deductFromUserBalance,
   updateUserMoney,
 };

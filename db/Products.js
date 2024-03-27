@@ -22,7 +22,7 @@ const getProductById = async (productId) => {
 
 const updateMultipleProductQuantities = async (productsToUpdate) => {
   try {
-    const productUpdate = productsToUpdate.map((product) => {
+    const productUpdates = productsToUpdate.map((product) => {
       return prisma.products.update({
         where: {
           id: parseInt(product.productId),
@@ -34,11 +34,12 @@ const updateMultipleProductQuantities = async (productsToUpdate) => {
         },
       });
     });
-    const updatedProduct = await prisma.$productUpdate(productUpdate);
-    console.log("updated producsw");
-    return updatedProduct;
+    const updatedProducts = await prisma.$transaction(productUpdates);
+    console.log("Updated products");
+    return updatedProducts;
   } catch (error) {
     console.log(error);
+    throw error;
   }
 };
 
