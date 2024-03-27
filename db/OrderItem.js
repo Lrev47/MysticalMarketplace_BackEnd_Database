@@ -77,9 +77,10 @@ const deleteOrderItem = async (orderitemId) => {
       },
     });
     console.log("Item deleted", orderitem);
-    return console.log("ITEM DELETED");
+    return orderitem;
   } catch (error) {
     console.log(error);
+    throw error;
   }
 };
 
