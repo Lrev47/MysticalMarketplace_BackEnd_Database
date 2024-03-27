@@ -73,9 +73,10 @@ OrderItemRouter.patch("/:id", async (req, res) => {
   }
 });
 
-OrderItemRouter.delete("/:id", async (req, res) => {
+OrderItemRouter.delete("/", async (req, res) => {
   try {
-    const OrderItem = await deleteOrderItem(req.params.id);
+    const { orderItemId } = req.body;
+    const OrderItem = await deleteOrderItem(orderItemId);
     res.send(OrderItem);
   } catch (error) {}
 });
