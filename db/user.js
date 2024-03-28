@@ -44,16 +44,16 @@ const deductFromUserBalance = async (userId, totalCost) => {
   }
 };
 
-const updateUserMoney = async (userId, newAmount) => {
+const updateUserMoney = async (userId, totalBalance) => {
   try {
-    console.log("INFO HIT DB FUNCTION:", userId, newAmount);
+    console.log("INFO HIT DB FUNCTION:", userId, totalBalance);
     const updatedMoney = await prisma.users.update({
       where: {
         id: parseInt(userId),
       },
       data: {
         moneyNum: {
-          decrement: newAmount,
+          decrement: totalBalance,
         },
       },
     });

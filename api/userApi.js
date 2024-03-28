@@ -43,9 +43,10 @@ userRouter.patch("/deduct-balance", async (req, res) => {
   }
 });
 
-userRouter.patch("/", async (req, res) => {
+userRouter.patch("/deductMoney", async (req, res) => {
   try {
     const { userId, totalBalance } = req.body;
+    console.log("Request Body:", req.body);
     console.log("INFO HIT BACKEND ENDPOINT:", userId, totalBalance);
     const newAmount = await updateUserMoney(userId, totalBalance);
     res.json(newAmount);
