@@ -12,7 +12,7 @@ const getAllUsers = async () => {
   }
 };
 
-const updateMoneyByUserId = async (userId, moneyNum, currentBalance) => {
+const updateMoneyByUserId = async (userId, moneyNum) => {
   try {
     console.log("USER ID BEFORE MONEY FUNCTION", userId);
     const updatedUser = await prisma.users.update({
@@ -20,7 +20,9 @@ const updateMoneyByUserId = async (userId, moneyNum, currentBalance) => {
         id: parseInt(userId),
       },
       data: {
-        moneyNum: parseFloat(moneyNum + currentBalance),
+        moneyNum: {
+          increment: parseFloat(moneyNum),
+        },
       },
     });
     return updatedUser;
@@ -44,19 +46,23 @@ const deductFromUserBalance = async (userId, totalCost) => {
 
 const updateUserMoney = async (userId, newAmount) => {
   try {
+    console.log("INFO HIT DB FUNCTION:", userId, newAmount);
     const updatedMoney = await prisma.users.update({
       where: {
         id: parseInt(userId),
       },
       data: {
         moneyNum: {
-          increment: newAmount,
+          decrement: newAmount,
         },
       },
     });
     console.log("User Money Updated");
+    console.log("THE UPDATED MONEY SHOULD BE", updatedMoney);
     return updatedMoney;
-  } catch (error) {}
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const getUserById = async (userId) => {

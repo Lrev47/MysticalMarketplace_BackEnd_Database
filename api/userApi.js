@@ -18,15 +18,11 @@ userRouter.get("/", async (req, res) => {
   }
 });
 
-userRouter.patch("/:id", async (req, res) => {
+userRouter.patch("/AddMoney", async (req, res) => {
   try {
-    const { userId, moneyNum, currentBalance } = req.body;
-    console.log(userId);
-    const updateUser = await updateMoneyByUserId(
-      userId,
-      moneyNum,
-      currentBalance
-    );
+    const { userId, moneyNum } = req.body;
+
+    const updateUser = await updateMoneyByUserId(userId, moneyNum);
     res.json(updateUser);
   } catch (error) {
     console.error(error);
@@ -36,6 +32,7 @@ userRouter.patch("/:id", async (req, res) => {
 userRouter.patch("/deduct-balance", async (req, res) => {
   try {
     const { userId, totalCost } = req.body;
+
     const updatedUser = await deductFromUserBalance(userId, totalCost);
     res.json({
       message: "USers balance has been updated.",
@@ -46,12 +43,13 @@ userRouter.patch("/deduct-balance", async (req, res) => {
   }
 });
 
-userRouter.patch("/:id", verifyToken, async (req, res) => {
+userRouter.patch("/", async (req, res) => {
   try {
-    const userId = req.params.id;
-    const { moneyNum } = req.body;
-    const updatedMoneyNum = await updateUserMoney(userId, moneyNum);
-    res.json(updatedMoneyNum);
+    const { userId, totalBalance } = req.body;
+    console.log("INFO HIT BACKEND ENDPOINT:", userId, totalBalance);
+    const newAmount = await updateUserMoney(userId, totalBalance);
+    res.json(newAmount);
+    console.log("SHOULD RETURN NEW AMOUNT:", newAmount);
   } catch (error) {
     console.log(error);
   }
@@ -62,7 +60,7 @@ userRouter.get("/:id", verifyToken, async (req, res) => {
     const user = await getUserById(req.params.id);
     res.send(user);
   } catch (error) {
-    res.error;
+    console.error(error);
   }
 });
 

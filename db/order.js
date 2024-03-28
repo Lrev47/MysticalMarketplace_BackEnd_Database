@@ -31,11 +31,16 @@ const updateOrderStatusById = async (orderId, newStatus) => {
   }
 };
 
-const updateOrderTotalById = async (orderId, newTotal) => {
+const updateOrderTotalById = async (order) => {
   try {
+    let total = 0;
+    order.orderItems.map((item) => {
+      total += item.price;
+    });
+    console.log("***********************", total);
     const updatedOrder = await prisma.order.update({
-      where: { id: parseInt(orderId, 10) },
-      data: { total: newTotal },
+      where: { id: parseInt(order.id, 10) },
+      data: { total, status: "completed" },
     });
     return updatedOrder;
   } catch (error) {

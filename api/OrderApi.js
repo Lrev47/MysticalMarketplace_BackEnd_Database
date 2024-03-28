@@ -54,10 +54,10 @@ OrderRouter.patch("/updateStatus", async (req, res) => {
 });
 
 OrderRouter.patch("/updateTotal", async (req, res) => {
-  const { orderId, newTotal } = req.body;
-
+  const { orderId } = req.body;
+  console.log("XXXXXXXXXXXXXXXXXXXXX", req.body);
   try {
-    const updatedOrder = await updateOrderTotalById(orderId, newTotal);
+    const updatedOrder = await updateOrderTotalById(req.body);
     res.json(updatedOrder);
   } catch (error) {
     console.error(error);
