@@ -30,6 +30,26 @@ const updateMoneyByUserId = async (userId, moneyNum) => {
     console.error(error);
   }
 };
+
+const getUserBalance = async (userId) => {
+  try {
+    const user = await prisma.users.findUnique({
+      where: { id: parseInt(userId) },
+      select: { moneyNum: true },
+    });
+    if (user) {
+      console.log("User balance retrieved:", user.moneyNum);
+      return user.moneyNum;
+    } else {
+      console.log("User not found");
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching user balance:", error);
+    throw error;
+  }
+};
+
 const deductFromUserBalance = async (userId, totalCost) => {
   try {
     const updatedUser = await prisma.users.update({
@@ -108,4 +128,5 @@ module.exports = {
   updateMoneyByUserId,
   deductFromUserBalance,
   updateUserMoney,
+  getUserBalance,
 };

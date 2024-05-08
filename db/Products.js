@@ -19,7 +19,6 @@ const getProductById = async (productId) => {
     return product;
   } catch (error) {}
 };
-
 const updateMultipleProductQuantities = async (productsToUpdate) => {
   try {
     const productUpdates = productsToUpdate.map((product) => {

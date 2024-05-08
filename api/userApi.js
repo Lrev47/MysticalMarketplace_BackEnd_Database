@@ -6,6 +6,7 @@ const {
   updateMoneyByUserId,
   deductFromUserBalance,
   updateUserMoney,
+  getUserBalance,
 } = require("../db/user");
 const { verifyToken } = require("./Authenticate");
 
@@ -62,6 +63,22 @@ userRouter.get("/:id", verifyToken, async (req, res) => {
     res.send(user);
   } catch (error) {
     console.error(error);
+  }
+});
+userRouter.get("/balance/:userId", async (req, res) => {
+  try {
+    const userId = req.params.userId;
+    const balance = await getUserBalance(userId);
+    if (balance !== null) {
+      res.json({ userId, balance });
+    } else {
+      res.status(404).json({ message: "User not found" });
+    }
+  } catch (error) {
+    console.error("Error fetching user balance:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while fetching user balance" });
   }
 });
 
