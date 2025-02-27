@@ -10,7 +10,7 @@ module.exports = [
     password: "YouShallNotPass!",
     email: "gandalf@middleearth.net",
     moneyNum: 10.0,
-    userImageUrl: "https://imagizer.imageshack.com/img924/4623/lWaodb.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/2/1740674990127-lWaodb.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -24,7 +24,7 @@ module.exports = [
     password: "Alohomora123",
     email: "harry@hogwarts.com",
     moneyNum: 10.01,
-    userImageUrl: "https://imagizer.imageshack.com/img923/9411/Xjtfjr.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/1/1740674983773-Xjtfjr.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -39,7 +39,7 @@ module.exports = [
     password: "Dracarys2023",
     email: "daenerys@dragonstone.com",
     moneyNum: 10.02,
-    userImageUrl: "https://imagizer.imageshack.com/img924/9788/11qolF.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/8/1740674987779-11qolF.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -53,7 +53,7 @@ module.exports = [
     password: "TheOneRingToRuleThemAll",
     email: "frodo@shire.com",
     moneyNum: 10.02,
-    userImageUrl: "https://imagizer.imageshack.com/img923/8791/HMCJa4.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/6/1740674991513-HMCJa4.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -67,7 +67,7 @@ module.exports = [
     password: "IKnowNothing18",
     email: "jon@nightswatch.org",
     moneyNum: 10.03,
-    userImageUrl: "https://imagizer.imageshack.com/img922/4664/usC9r3.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/4/1740674995642-usC9r3.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -81,7 +81,7 @@ module.exports = [
     password: "ReturnOfTheKing",
     email: "aragorn@gondor.gov",
     moneyNum: 10.04,
-    userImageUrl: "https://imagizer.imageshack.com/img923/7633/L6nv6p.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/5/1740674993255-L6nv6p.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -95,7 +95,7 @@ module.exports = [
     password: "LeviosaNotLeviosA",
     email: "hermione@hogwarts.com",
     moneyNum: 10.5,
-    userImageUrl: "http://imageshack.com/a/img924/5742/UkLKY5.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/9/1740674986438-UkLKY5.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -109,7 +109,7 @@ module.exports = [
     password: "IDrinkAndIKnowThings",
     email: "tyrion@casterlyrock.gov",
     moneyNum: 10.6,
-    userImageUrl: "https://imagizer.imageshack.com/img924/6378/9nFiwc.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/10/1740674988982-9nFiwc.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -123,7 +123,7 @@ module.exports = [
     password: "BowAndArrowMaster",
     email: "legolas@woodlandrealm.elf",
     moneyNum: 10.7,
-    userImageUrl: "https://imagizer.imageshack.com/img923/2042/6ZjSN3.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/7/1740674994481-6ZjSN3.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
   {
@@ -137,7 +137,7 @@ module.exports = [
     password: "TheGreatestLittleHobbitOfThemAll",
     email: "bilbo@shire.com",
     moneyNum: 10.8,
-    userImageUrl: "https://imagizer.imageshack.com/img924/9206/CNrB8B.png",
+    userImageUrl: "https://mystical-marketplace-images.s3.us-east-1.amazonaws.com/users/3/1740674985286-CNrB8B.png",
     favoriteProduct: "Tapestry of the World's Dawn",
   },
 ];

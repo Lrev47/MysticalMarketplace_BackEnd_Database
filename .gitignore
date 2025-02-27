@@ -1,2 +1,7 @@
 node_modules
 .env
+# AWS credentials and config
+aws-migration/credentials
+aws-migration/config
+# Temporary image storage
+aws-migration/temp
